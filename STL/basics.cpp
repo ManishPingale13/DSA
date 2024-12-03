@@ -225,13 +225,13 @@ void learnExtra(){
 
 int main(){
     // learnPair();
-    // learnVector();
+    learnVector();
     // learnList();
     // learnDeque();
     // learnStack_Queue();
     // learnPriorityQueue();
     // learnSets();
     // learnMap();
-    learnExtra();
+    // learnExtra();
     return 0;
 }
