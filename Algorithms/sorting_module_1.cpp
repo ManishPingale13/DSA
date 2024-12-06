@@ -38,10 +38,10 @@ void bubble_sort(){
                 int temp=arr[j];
                 arr[j]=arr[j+1];
                 arr[j+1]=temp;
-            }
-            if(!swap)           //best case O(n) improvement
-                break;
+            }        
         }
+        if(!swap)           //best case O(n) improvement
+            break;
     }
     for(auto i:arr)
         cout<<i<<endl;
