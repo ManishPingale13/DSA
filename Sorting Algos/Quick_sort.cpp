@@ -4,6 +4,7 @@ using namespace std;
 int partition(int arr[], int low, int high)
 {
     int pivot = arr[low];
+    cout<<"Pivot: "<<pivot<<" Low: "<<low<<endl;
     int i = low;
     int j = high;
 
@@ -18,7 +19,7 @@ int partition(int arr[], int low, int high)
         if(i<j)        
             swap(arr[i],arr[j]);
     }
-
+    cout<<"I: "<<i<<" J: "<<j<<endl;
     swap(arr[low],arr[j]);
     return j;
 }

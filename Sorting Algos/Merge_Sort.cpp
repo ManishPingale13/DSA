@@ -32,15 +32,24 @@ void mergeVector(vector<int> &arr,int low,int mid,int high){
     for(int i=low;i<=high;i++)
         arr[i]=temp[i-low];     //i-low bcz low is not 0 everytime
     
+    cout<<"Merged Low: "<<low<<" Mid: "<<mid<<" High: "<<high<<endl;
+    for(auto i:arr)
+        cout<<i<<"\t";
+    cout<<endl;
+    
 }
 
 //Time complexity for divide - log(N)
 //Time complexity for merge - (N)
 //MERGE SORT - O(N log N)
 void mergeSortVector(vector<int> &arr,int low,int high){
-    if(low==high) return;
+    for(auto i:arr)
+        cout<<i<<"\t";
+    cout<<"mergeSortVector Low: "<<low<<" High: "<<high<<endl;
 
+    if(low==high) return;
     int mid=(low+high)/2;
+   
     mergeSortVector(arr,low,mid);
     mergeSortVector(arr,mid+1,high);
  
@@ -50,18 +59,19 @@ void mergeSortVector(vector<int> &arr,int low,int high){
 
 
 int main(){
-    vector<int> vectorArr={12,-41,10,40,0,140,1};
+    vector<int> vectorArr={12,-41,10,40,0};
 
-    cout<<"Before sorting:\n";
     for(auto i:vectorArr)
         cout<<i<<"\t";
     cout<<endl;
+    cout<<"Before sorting\n";
 
-    mergeSortVector(vectorArr,0,6);
+
+    mergeSortVector(vectorArr,0,4);
     
-    cout<<"\nAfter sorting:\n";
-    for(auto i:vectorArr)
-        cout<<i<<"\t";
-    cout<<endl;
+    // cout<<"\nAfter sorting:\n";
+    // for(auto i:vectorArr)
+    //     cout<<i<<"\t";
+    // cout<<endl;
     return 0;
 }
