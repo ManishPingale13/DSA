@@ -34,7 +34,7 @@ void checkSorted(int arr[],int n){
     cout<<"Array is sorted\n";
 }
 
-// Q4
+// Q4 remove duplicate in sorted array,replace non duplicate in first places of array
 int removeDuplicates(int arrX[],int n){
     int i=0;
     for(int j=1;j<n;j++){
