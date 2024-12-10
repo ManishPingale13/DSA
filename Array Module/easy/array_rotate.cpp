@@ -29,7 +29,7 @@ void better_rotate(int arr[], int n, int k)
     k = k % n; // reduce k>n to k<n 10%7 -> 3
     int temp[k];
 
-    for (int i = 0; i < k; i++) // store first k elements in temp arr
+    for (int i = 0; i < k; i++)         // store first k elements in temp arr
         temp[i] = arr[i];
 
     for (int i = k; i < n; i++)         // rotate array elements to 0th places
